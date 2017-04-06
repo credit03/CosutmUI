@@ -27,15 +27,15 @@ import java.util.List;
 
 public class UcFragment extends Fragment {
 
-    RecyclerView mRecylerView;
-    private LinearLayoutManager mManager;
-    private TestAdapter adapter;
+    protected RecyclerView mRecylerView;
+    protected LinearLayoutManager mManager;
+    protected TestAdapter adapter;
 
     public UcFragment() {
         super();
     }
 
-    private View rootView;
+    protected View rootView;
 
     @Nullable
     @Override
@@ -57,15 +57,7 @@ public class UcFragment extends Fragment {
         return rootView;
     }
 
-    @Override
-    public void onResume() {
-
-        super.onResume();
-
-
-    }
-
-    private class TestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    protected class TestAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         private List<String> datas;
         private Context mContext;

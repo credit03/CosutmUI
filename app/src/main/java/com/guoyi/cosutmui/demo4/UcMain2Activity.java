@@ -40,7 +40,7 @@ public class UcMain2Activity extends AppCompatActivity implements UcBehaviorHelp
         titles = new ArrayList<>();
         for (int j = 0; j < 5; j++) {
             titles.add("tab" + j);
-            mFragments.add(new UcFragment());
+            mFragments.add(new Uc2Fragment());
         }
         mViewpager.setOffscreenPageLimit(titles.size());
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager(), this, mFragments, titles);
