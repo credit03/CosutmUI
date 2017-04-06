@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="head_pager" type="id"/>
+    <item name="uc_head_pager" type="id"/>
+    <item name="uc_toolbar_pager" type="id"/>
+    <item name="uc_tab_pager" type="id"/>
+    <item name="uc_content_pager" type="id"/>
+
+
+    <item name="zfb_head_pager" type="id"/>
+    <item name="zfb_head_content_pager" type="id"/>
+    <item name="zfb_toolbar_1" type="id"/>
+    <item name="zfb_toolbar_2" type="id"/>
+</resources>

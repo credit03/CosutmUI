@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="rainbowbar">
+        <attr name="rainbowbar_line_size" format="dimension"></attr>
+        <attr name="rainbowbar_line_width" format="dimension"></attr>
+        <attr name="rainbowbar_line_space" format="dimension"></attr>
+        <attr name="rainbowbar_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ninephoto">
+        <attr name="ninephoto_vpace" format="dimension"></attr>
+        <attr name="ninephoto_hpace" format="dimension"></attr>
+    </declare-styleable>
+</resources>

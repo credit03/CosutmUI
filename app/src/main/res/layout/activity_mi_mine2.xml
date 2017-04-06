@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:id="@id/head_pager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/a"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/mimine2_content_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_height"
+                    android:gravity="center"
+                    android:text="Cre"
+                    android:textColor="#f18007"
+                    android:textSize="32sp"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="介绍仿小米个人中心cell界面"
+                    android:textColor="#f18007"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="?attr/colorPrimary"
+                android:gravity="center"
+                android:text="Mi.me"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/toobar_offset_height"
+        android:background="@color/colorAccent"
+        app:layout_behavior="@string/mimine2_title_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

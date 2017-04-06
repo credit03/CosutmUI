@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".demo2.View2Activity">
+
+    <com.guoyi.cosutmui.demo2.NinePhotoView
+        android:id="@+id/nine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:ninephoto_hpace="5dp"
+        app:ninephoto_vpace="5dp"/>
+</LinearLayout>

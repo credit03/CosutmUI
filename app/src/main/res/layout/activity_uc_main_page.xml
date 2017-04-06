@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41abdc"
+    tools:context="com.guoyi.cosutmui.demo4.UcMainPageActivity">
+
+    <FrameLayout
+        android:id="@id/uc_head_pager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="仿UC首页"
+            android:textColor="#ffff"
+            android:textSize="50sp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@id/uc_toolbar_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:layout_behavior="com.guoyi.cosutmui.demo4.behavior.UcToolbarBehavior">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            />
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/uc_tab_pager"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_behavior="com.guoyi.cosutmui.demo4.behavior.UcTabBehavior"
+        app:tabBackground="@color/tabbackgorud"
+        app:tabIndicatorColor="#aba7a7"
+        app:tabSelectedTextColor="#df3232"/>
+
+    <com.guoyi.cosutmui.demo4.HeadStateViewPager
+        android:id="@id/uc_content_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:scrollbars="none"
+        app:layout_behavior="com.guoyi.cosutmui.demo4.behavior.UcContentBehavior"
+        />
+</android.support.design.widget.CoordinatorLayout>

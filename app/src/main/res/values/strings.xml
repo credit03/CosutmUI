@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CoordinatorLayoutDemo</string>
+    <string name="mimine2_content_behavior">
+        com.guoyi.cosutmui.demo3.behavior.MiMineContentBehavior
+    </string>
+    <string name="mimine2_title_behavior">
+       com.guoyi.cosutmui.demo3.behavior.MiMineTitleBehavior
+    </string>
+</resources>
